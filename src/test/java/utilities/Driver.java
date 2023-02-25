@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+
 import java.time.Duration;
 
 public class Driver {
@@ -14,6 +15,9 @@ public class Driver {
     2-Driver'i kapatacağımız zaman da public static void closeDriver() methodu oluşturmak. İstediğimiz zaman
     bu methodla driver'i kapatacağız
      */
+    private Driver(){
+
+    }
     static WebDriver driver;
 
     public static WebDriver getDriver() {

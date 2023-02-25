@@ -6,10 +6,10 @@ import pages.AmazonPage;
 import utilities.Driver;
 
 public class PageKullanimi {
-    @Test
+    @Test(groups = "gp1")
     public void testName() {
-        AmazonPage amazonPage = new AmazonPage();
 
+        AmazonPage amazonPage = new AmazonPage();
         //amazona gidelim
         Driver.getDriver().get("https://amazon.com");
 
@@ -22,4 +22,5 @@ public class PageKullanimi {
         assert actualSonuc.contains(arananKelime);
         Driver.closeDriver();
     }
+
 }
