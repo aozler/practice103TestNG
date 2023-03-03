@@ -9,7 +9,7 @@ import java.time.Duration;
 
 public class TestBaseCross {
     protected static WebDriver driver;
-    @Parameters
+    @Parameters("browser")
     @BeforeClass
     public void setup(@Optional String browser) {
         driver = CrossDriver.getDriver(browser);
